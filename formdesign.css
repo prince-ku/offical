@@ -1,0 +1,56 @@
+/* next page*/
+.main{
+    background-color: #D1C2E9;
+}
+.inbox{
+    background-color: white;
+    width: 50%;
+}
+.maketwo{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+}
+.side2{
+    background-color: #5B00F5;
+    color: white;
+    width: 300px;
+}
+.firstn{
+    width: 200px;
+    padding: 3px;
+}
+.ce{
+     display: flex;
+     justify-content: space-around;
+}
+.cen{
+    margin-left: 40px;
+    width: 400px;
+    height: 100px;
+    resize: none;
+}
+h2{
+    padding: 15px;
+}
+.and{
+margin-left: 40px;
+}
+.wait1{
+    padding: 15px;
+}
+.wait{
+   width: 150px; 
+   margin-left: 40px;
+}
+.sendbutton{
+    margin: 50px;
+}
+p{
+    margin: 20px;
+    font-size: 20px;
+}
