@@ -5,43 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="formdesign.css">
     <title>Document</title>
 </head>
 
 <body>
-    <form name="submit-to-google-sheet">
-        <input name="First Name" type="text" placeholder="First Name" required>
-        <br>
-        <input name="Last Name" type="text" placeholder="Last Name">
-        <br><input name="Phone Number" type="text" placeholder="Phone Number">
-        <br><input name="Email id" type="email" placeholder="Email id">
-        <br> <input name="Address" type="text" placeholder="Address">
-        <br>Services: <br><input name="Wash" id="Wash" type="checkbox" value="Wash">
-        <label for="Wash"> Wash</label>
-        <br><input name="Iron" id="Iron" type="checkbox" value="Iron">
-        <label for="Iron">Iron</label>
-        <br><input name="Dry Cleaning" id="Dry Cleaning" type="checkbox" value="Dry Cleaning">
-        <label for="Dry Cleaning"> Dry Cleaning</label> <br>
-        <!-- <p>   Pickup Timing   </p> -->
-        <label for="Pickup Timing">Choose Pickup Timing:</label> <br>
-        <select name="Pickup Timing" id="Pickup Timing" required>
-            <!-- <option value="">Choose specific time for pickup</option> -->
-            <option value="09:00AM-12:00PM">09:00AM-12:00PM</option>
-            <option value="12:00PM-03:00PM">12:00PM-03:00PM</option>
-            <option value="03:00PM-06:00PM">03:00PM-06:00PM</option>
-        </select>
-        <!-- <p>     Drop Timing   </p> -->
-        <br />
-        <label for="Drop Timing">Choose Drop Timing:</label> <br>
-        <select name="Drop Timing" id="Drop Timing" required>
-            <!-- <option value="">Choose specific time for Drop</option> -->
-            <option value="09:00AM-12:00PM">09:00AM-12:00PM</option>
-            <option value="12:00PM-03:00PM">12:00PM-03:00PM</option>
-            <option value="03:00PM-06:00PM">03:00PM-06:00PM</option>
-        </select> <br>
-        <br><button type="submit">Send</button>
-    </form>
+    <header>
+        <div>
+            <img id="three" src="three lines icon.png" alt="menu">
+            <img id="logo" src="Logo Icon.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li>location</li>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+            </ul>
+            <button>Loginin / Sign up</button>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="maketwo">
+            <div class="side2">
+                <h2>Details</h2>
+                <p>
+                Get laundry & dry-cleaning services delivered to your doorstep at the tap of a button with India's first
+                online laundry & dry-cleaning service platform.
+                </p>
+            </div>
+            <div class="inbox">
+                <h2>Basic Details</h2>
+                <form class="form1" name="submit-to-google-sheet">
+                    <div class="ce">
+                        <input class="firstn" name="First Name" type="text" placeholder="First Name" required>
+                        <br>
+                        <input class="firstn" name="Last Name" type="text" placeholder="Last Name">
+                    </div><br>
+                    <div class="ce">
+                        <input class="firstn" name="Phone Number" type="text" placeholder="Phone Number">
+                        <br><input class="firstn" name="Email id" type="email" placeholder="Email id">
+                    </div>
+                    <br> <textarea class="cen" name="Address" rows="4" cols="50" placeholder="House no./ Street/ City/ Landmark/ State"></textarea>
+                    <h2>Booking Details</h2> 
+                    <input name="Wash" id="Wash" type="checkbox" value="Wash">
+                    <label class="and" for="Wash"> Wash</label>
+                    <input name="Iron" id="Iron" type="checkbox" value="Iron">
+                    <label class="and" for="Iron">Iron</label>
+                    <input name="Dry Cleaning" id="Dry Cleaning" type="checkbox" value="Dry Cleaning">
+                    <label class="and" for="Dry Cleaning"> Dry Cleaning</label><br>
+                    <!-- <p>   Pickup Timing   </p> -->
+                    <label class="wait1" for="Pickup Timing"><b>Choose Pickup Timing:</b></label>
+                    <select class="wait" name="Pickup Timing" id="Pickup Timing" required>
+                        <!-- <option value="">Choose specific time for pickup</option> -->
+                        <option value="09:00AM-12:00PM">09:00AM-12:00PM</option>
+                        <option value="12:00PM-03:00PM">12:00PM-03:00PM</option>
+                        <option value="03:00PM-06:00PM">03:00PM-06:00PM</option>
+                    </select>
+                    <!-- <p>     Drop Timing   </p> -->
+                    <br />
+                    <label class="wait1" for="Drop Timing"><b>Choose Drop Timing:</b></label>
+                    <select class="wait" name="Drop Timing" id="Drop Timing" required>
+                        <!-- <option value="">Choose specific time for Drop</option> -->
+                        <option value="09:00AM-12:00PM">09:00AM-12:00PM</option>
+                        <option value="12:00PM-03:00PM">12:00PM-03:00PM</option>
+                        <option value="03:00PM-06:00PM">03:00PM-06:00PM</option>
+                    </select> <br>
 
+                    <br><button class="sendbutton" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer starts-->
+    <footer>
+        <div class="con">
+            Contact US <br><br>
+            <svg width="20" height="20" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M22.2708 13.4162C22.4119 12.1192 22.3656 10.7915 22.1319 9.51477C21.8231 7.82822 21.1871 6.231 20.2241 4.91209C19.261 3.59319 18.0948 2.72229 16.8633 2.29939C15.9311 1.97926 14.9615 1.91586 14.0145 2.10919"
+                    stroke="black" stroke-width="2.66906" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M18.0321 12.8018C18.1834 11.4124 17.8685 9.94629 17.0876 8.87678C16.3066 7.80727 15.2361 7.376 14.2216 7.58311"
+                    stroke="black" stroke-width="2.66906" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M6.96702 4.38208C7.37274 4.38208 7.74656 4.68347 7.94353 5.16927L9.30972 8.53962C9.48859 8.98091 9.49702 9.51467 9.33217 9.96614L8.01602 13.5711C8.01602 13.5711 8.39744 16.2567 9.99371 18.4429C11.59 20.629 13.5444 21.1423 13.5444 21.1423L16.1763 19.3401C16.5062 19.1142 16.8962 19.1259 17.2185 19.3713L19.6865 21.2505C20.0409 21.5203 20.2607 22.032 20.2607 22.5874V26.4676C20.2607 28.4436 18.9205 29.8708 17.5533 29.239C14.7455 27.9415 10.387 25.4711 7.62443 21.6876C4.86184 17.9043 3.05793 11.9352 2.11052 8.08984C1.64922 6.21752 2.69134 4.38208 4.13418 4.38208H6.96702Z"
+                    fill="#F0F2F4" stroke="black" stroke-width="2.66906" stroke-linejoin="round" />
+            </svg>
+            9999121212<br>
+            <svg width="20" height="20" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 27.6785H27V14.8392V2H14.5H2V14.8392V27.6785Z" fill="#DDE2E9" stroke="black"
+                    stroke-width="3.4487" stroke-linejoin="round" />
+                <path d="M2 2L14.5 14.8392L27 2" stroke="#130D0D" stroke-width="3.4487" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M14.5 2H2V14.8392" stroke="black" stroke-width="3.4487" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M27 14.8392V2H14.5" stroke="black" stroke-width="3.4487" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            helpmeclothx@gmail.com<br>
+            <svg width="20" height="25" viewBox="0 0 29 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M27 19.119C27 28.5735 21.4036 36.2379 14.5 36.2379C10.7666 36.2379 2 36.2379 2 36.2379C2 36.2379 2 23.4605 2 19.119C2 9.66442 7.59644 2 14.5 2C21.4036 2 27 9.66442 27 19.119Z"
+                    fill="#E1E8F1" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8.24994 13.9832H19.4999" stroke="#0C0A0A" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M8.24994 20.8308H19.4999" stroke="#0C0A0A" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M8.24994 27.6785H14.4999" stroke="#0C0A0A" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            Chat Support<br>
+        </div>
+        <div class="con">
+            For User<br><br>
+            Our Service<br>
+            Feedback<br>
+            Mobile App<br>
+        </div>
+        <div class="con">
+            For Bussiness<br><br>
+            Become a Partner<br>
+            Merchant App<br>
+        </div>
+    </footer>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycby-c4Fqy2c-kxdV1E2ECxWCOc14ZgPUXUpk2Ztibr1E81r-9DiO4xCIG-obftRX59Fr/exec'
         const form = document.forms['submit-to-google-sheet']
