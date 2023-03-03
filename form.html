@@ -22,9 +22,23 @@
         <label for="Iron">Iron</label>
         <br><input name="Dry Cleaning" id="Dry Cleaning" type="checkbox" value="Dry Cleaning">
         <label for="Dry Cleaning"> Dry Cleaning</label>
-        <br><input name="Pickup Timing" type="text" placeholder="Pickup Timing">
-        <br><input name="Drop Timing" type="text" placeholder="Drop Timing">
-
+        <!-- <p>   Pickup Timing   </p> -->
+        <label for="Pickup Timing">Choose Pickup Timing:</label> <br>
+        <select name="Pickup Timing" id="Pickup Timing" required>
+            <!-- <option value="">Choose specific time for pickup</option> -->
+            <option value="09:00AM-12:00PM">09:00AM-12:00PM</option>
+            <option value="12:00PM-03:00PM">12:00PM-03:00PM</option>
+            <option value="03:00PM-06:00PM">03:00PM-06:00PM</option>
+        </select>
+        <!-- <p>     Drop Timing   </p> -->
+        <br />
+        <label for="Drop Timing">Choose Drop Timing:</label> <br>
+        <select name="Drop Timing" id="Drop Timing" required>
+            <!-- <option value="">Choose specific time for Drop</option> -->
+            <option value="09:00AM-12:00PM">09:00AM-12:00PM</option>
+            <option value="12:00PM-03:00PM">12:00PM-03:00PM</option>
+            <option value="03:00PM-06:00PM">03:00PM-06:00PM</option>
+        </select> <br>
         <br><button type="submit">Send</button>
     </form>
 
